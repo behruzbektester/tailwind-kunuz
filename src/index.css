@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css2?family=Molengo&display=swap);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#root {
+  font-family: "Molengo", sans-serif;
+  background-color: #ccc;
+}
+
+.hover:hover {
+  color: #0035a0;
+}
+
+.btn {
+  width: 42px;
+}
+
+.btn:hover {
+  opacity: 60%;
+}
