@@ -34,7 +34,7 @@ export default function App() {
       element: <RU />,
     },
     {
-      path: "/*",
+      path: "*",
       element: <NotFound />,
     },
   ]);

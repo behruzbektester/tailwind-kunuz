@@ -12,7 +12,7 @@ export default function Navlinks() {
           <NavLink to={"/contact"}>Contact</NavLink>
         </li>
         <li>
-          <NavLink to={"/*"}>
+          <NavLink to={"*"}>
             <NotFound />
           </NavLink>
         </li>
