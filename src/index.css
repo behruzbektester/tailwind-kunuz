@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-#root {
+body {
   font-family: "Molengo", sans-serif;
   background-color: #ccc;
 }
