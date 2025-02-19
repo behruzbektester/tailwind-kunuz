@@ -1,66 +1,154 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import NavLinks from "../components/NavLinks";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <nav className="bg-white shadow-md">
-      <div className="container mx-auto flex justify-between items-center py-2 px-4">
-        <div className="flex items-center space-x-2">
-          <img src="/kunuz-logo.png" alt="" width={92} />
-        </div>
+    <>
+      <Header />
+      <main className="main">
+        <section className="flex gap-4 mt-10 mb-10">
+          <div className="container">
+            <h1 className="text-3xl pb-5 pt-10 text-black w-7/12 font-semibold">
+              O‘zbekistonda Ikkinchi jahon urushi qatnashchilari va
+              nogironlarining har biriga 10 ming dollar pul mukofoti beriladi
+            </h1>
+            <img className="w-9/12" src="/dollars.jpg" alt="" />
+            <p className="text-2xl pb-5 pt-5">
+              Mamlakatda 9-may – Xotira va qadrlash kuni umumxalq bayrami
+              sifatida keng nishonlanishi munosabati bilan urush qatnashchilari
+              va nogironlarini, ularga tenglashtirilgan shaxslarni hamda
+              1941–1945-yillardagi urush davridagi mehnat fronti
+              qatnashchilarini moddiy rag‘batlantirish maqsadida bir martalik
+              pul mukofoti belgilandi.
+            </p>
 
-        <ul className="flex gap space-x-4 text-black font-extrabold justify-center gap-3 items-center">
-          <li className="border-l-2 pl-3 font-extrabold">O‘zbekiston</li>
-          <li className="border-l-2 pl-3">Jahon</li>
-          <li className="border-l-2 pl-3">Iqtisodiyot</li>
-          <li className="border-l-2 pl-3">Jamiyat</li>
-          <li className="border-l-2 pl-3">Sport</li>
-          <li className="border-l-2 pl-3">Fan-texnika</li>
-          <li className="border-l-2 pl-3">Nuqtayi nazar</li>
-          <li className="border-l-2 pl-3 border-r-2 pr-3">Audio</li>
-        </ul>
+            <p className="text-2xl ">Unga ko‘ra:</p>
 
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn m-1">
-            Click
+            <ul>
+              <li className="list-disc text-2xl pt-5">
+                Urush qatnashchilari va nogironlarining har biriga 10 ming
+                dollar;
+              </li>
+              <li className="list-disc text-2xl">
+                Urush qatnashchilariga tenglashtirilgan shaxslarning har biriga
+                25 mln so‘m;
+              </li>
+              <li className="list-disc text-2xl">
+                Urush davridagi mehnat fronti qatnashchilarining har biriga 3
+                mln so‘m miqdorida.
+              </li>
+            </ul>
+
+            <p className="text-2xl pt-5 pb-5">
+              Ushbu pul mukofoti tantanali hamda bayramona tarzda topshiriladi.
+            </p>
           </div>
-          <ul
-            tabIndex={0}
-            className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
-          >
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Item 2</a>
-            </li>
-          </ul>
-        </div>
-        <button
-          className="btn bg-gray-100 rounded-md pb-1 pt-1 pl-1 pr-1"
-          width={42}
-        >
-          <img src="/search.png" alt="" width={24} />
-        </button>
-      </div>
+          <div className=" pt-10">
+            <h3 className="text-1xl">Tavsiya etamiz</h3>
+            <div className="boxes-container">
+              <div className="quick-news">
+                <img className="w-24 " src="/Image.jpg" alt="" />
+                <h4 className="text-1xl font-medium w-30">
+                  Darz ketgan G'arb kollektivi. Tramp dunyoni qanday
+                  o‘zgartirmoqchi?
+                </h4>
+              </div>
+              <div className="quick-news">
+                <img className="w-24 " src="/Image.jpg" alt="" />
+                <h4 className="text-1xl font-medium w-30">
+                  Jurnalist Ruxsora G‘afurova sudga chaqirildi. O‘zgalar pulini
+                  o‘zlashtirishda gumon qilinayotgan
+                </h4>
+              </div>
+              <div className="quick-news">
+                <img className="w-24 " src="/Image.jpg" alt="" />
+                <h4 className="text-1xl font-medium w-30">
+                  O‘lim jazosiga hukm qilingan SSSR futbol yulduzi. U qanday
+                  qilib sportchidan haqiqiy jallodga
+                </h4>
+              </div>
+              <div className="quick-news">
+                <img className="w-24 " src="/Image.jpg" alt="" />
+                <h4 className="text-1xl font-medium w-30">
+                  O‘zbekiston Abu-Dabida biryo‘la NATO standartidagi uchta
+                  harbiy texnikasini namoyish qildi. Ular
+                </h4>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <div className="container mx-auto py-2 px-4">
-        <ul className="flex space-x-6 text-gray-600 text-base justify-between list-disc">
-          <NavLink to={"/trump"}>
-            <li className="hover">Tramp Oq uyga qaytdi</li>
-          </NavLink>
-          <NavLink to={"/tinchlik"}>
-            <li className="hover">G‘azoda tinchlik sulhi</li>
-          </NavLink>
-          <NavLink to={"/koreya"}>
-            <li className="hover">Koreyada siyosiy mojaro</li>
-          </NavLink>
-          <NavLink to={"/ru"}>
-            <li className="hover">Rossiya-Ukraina urushi</li>
-          </NavLink>
-        </ul>
-      </div>
-    </nav>
+        <section>
+          <div className="flex flex-wrap gap-2 container pb-5">
+            <div className="box">
+              <img className="w-24" src="/Image.jpg" alt="" />
+              <h3 className="text-base w-96 font-bold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                labore! Voluptates assumenda quod numquam dolores?
+              </h3>
+            </div>
+            <div className="box">
+              <img className="w-24" src="/Image.jpg" alt="" />
+              <h3 className="text-base w-96 font-bold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                labore! Voluptates assumenda quod numquam dolores?
+              </h3>
+            </div>
+            <div className="box">
+              <img className="w-24" src="/Image.jpg" alt="" />
+              <h3 className="text-base w-96 font-bold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                labore! Voluptates assumenda quod numquam dolores?
+              </h3>
+            </div>
+            <div className="box">
+              <img className="w-24" src="/Image.jpg" alt="" />
+              <h3 className="text-base w-96 font-bold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                labore! Voluptates assumenda quod numquam dolores?
+              </h3>
+            </div>
+            <div className="box">
+              <img className="w-24" src="/Image.jpg" alt="" />
+              <h3 className="text-base w-96 font-bold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                labore! Voluptates assumenda quod numquam dolores?
+              </h3>
+            </div>
+            <div className="box">
+              <img className="w-24" src="/Image.jpg" alt="" />
+              <h3 className="text-base w-96 font-bold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                labore! Voluptates assumenda quod numquam dolores?
+              </h3>
+            </div>
+            <div className="box">
+              <img className="w-24" src="/Image.jpg" alt="" />
+              <h3 className="text-base w-96 font-bold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                labore! Voluptates assumenda quod numquam dolores?
+              </h3>
+            </div>
+            <div className="box">
+              <img className="w-24" src="/Image.jpg" alt="" />
+              <h3 className="text-base w-96 font-bold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                labore! Voluptates assumenda quod numquam dolores?
+              </h3>
+            </div>
+            <div className="box">
+              <img className="w-24" src="/Image.jpg" alt="" />
+              <h3 className="text-base w-96 font-bold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                labore! Voluptates assumenda quod numquam dolores?
+              </h3>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
   );
 }
