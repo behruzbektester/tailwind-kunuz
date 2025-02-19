@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Header />
       <main className="main">
-        <section className="flex gap-4 mt-10 mb-10">
+        <section className="flex gap-4 mt-10 mb-10 container">
           <div className="container">
             <h1 className="text-3xl pb-5 pt-10 text-black w-7/12 font-semibold">
               O‘zbekistonda Ikkinchi jahon urushi qatnashchilari va
